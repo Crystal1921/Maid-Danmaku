@@ -1,0 +1,13 @@
+{
+  "itemGroup.maid_danmaku": "Example Mod Tab",
+  "block.maid_danmaku.example_block": "Example Block",
+  "item.maid_danmaku.example_item": "Example Item",
+
+  "maid_danmaku.configuration.title": "Maid Danmaku Configs",
+  "maid_danmaku.configuration.section.maid_danmaku.common.toml": "Maid Danmaku Configs",
+  "maid_danmaku.configuration.section.maid_danmaku.common.toml.title": "Maid Danmaku Configs",
+  "maid_danmaku.configuration.items": "Item List",
+  "maid_danmaku.configuration.logDirtBlock": "Log Dirt Block",
+  "maid_danmaku.configuration.magicNumberIntroduction": "Magic Number Text",
+  "maid_danmaku.configuration.magicNumber": "Magic Number"
+}
