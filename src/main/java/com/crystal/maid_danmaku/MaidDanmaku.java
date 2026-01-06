@@ -1,5 +1,6 @@
 package com.crystal.maid_danmaku;
 
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -13,4 +14,7 @@ public class MaidDanmaku {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
+    public static ResourceLocation getResourceLocation(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+    }
 }
