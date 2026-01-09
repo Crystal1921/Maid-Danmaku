@@ -25,5 +25,7 @@ public class DataGenerator {
                 event.includeClient(), new ModLanguage(output, "zh_cn"));
         generator.addProvider(
                 event.includeClient(), new ModLanguage(output, "en_us"));
+        generator.addProvider(
+                event.includeServer(), new ModItem(output, MaidDanmaku.MODID, existingFileHelper));
     }
 }

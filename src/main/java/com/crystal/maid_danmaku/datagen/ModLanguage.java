@@ -1,6 +1,7 @@
 package com.crystal.maid_danmaku.datagen;
 
 import com.crystal.maid_danmaku.MaidDanmaku;
+import com.crystal.maid_danmaku.registry.ItemRegistry;
 import com.google.gson.JsonObject;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
@@ -26,8 +27,11 @@ public class ModLanguage implements DataProvider {
     }
 
     private void addTranslations() {
+        this.add("itemGroup.maid_danmaku","Maid Danmaku","女仆弹幕");
         this.add("task.maid_danmaku.danmaku","Danmaku Show","弹幕表演");
         this.add("task.maid_danmaku.danmaku.desc","Danmaku should be beautiful","弹幕就是要华丽");
+
+        this.add(ItemRegistry.DANMAKU_CONTROLLER.get(), "Danmaku Controller","弹幕控制器");
     }
 
     @Override

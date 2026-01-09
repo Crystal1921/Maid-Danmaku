@@ -1,5 +1,7 @@
 package com.crystal.maid_danmaku;
 
+import com.crystal.maid_danmaku.registry.GroupRegistry;
+import com.crystal.maid_danmaku.registry.ItemRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -12,6 +14,8 @@ public class MaidDanmaku {
 
     public MaidDanmaku(IEventBus modEventBus, ModContainer modContainer) {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        ItemRegistry.ITEMS.register(modEventBus);
+        GroupRegistry.TABS.register(modEventBus);
     }
 
     public static ResourceLocation getResourceLocation(String path) {
